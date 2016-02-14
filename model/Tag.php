@@ -146,5 +146,13 @@
             $this->comentario = $comentario;
         }
 
+        function __construct($tag, $bd){
+            $this->setId($tag['id']);
+            $this->setFechaPublicacion($tag['fecha_publicacion']);
+            $this->setPosicionX($tag['posicion_x']);
+            $this->setPosicionY($tag['posicion_y']);
+            $this->setPosicionX($tag['pagina']);
+            $this->setPosicionY($tag['comentario']);
+        }
 
     }
