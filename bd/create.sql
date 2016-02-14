@@ -12,7 +12,7 @@ CREATE TABLE recurso
   tipo INT NOT NULL,
   fecha_publicacion DATETIME NOT NULL,
   usuario_id INT NOT NULL,
-  ubicacion INT NOT NULL
+  ubicacion VARCHAR(255) NOT NULL
 );
 CREATE TABLE tag
 (
@@ -32,3 +32,6 @@ CREATE TABLE usuario
   tipo INT DEFAULT 0 NOT NULL,
   foto VARCHAR(255) NOT NULL
 );
+
+
+INSERT INTO `Recurso` (`id`, `tipo`, `fecha_publicacion`, `usuario_id`, `ubicacion`) VALUES ('2', '1', '2016-02-14 00:00:00', '1', 'http://www.google.com');

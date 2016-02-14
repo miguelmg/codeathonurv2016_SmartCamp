@@ -1,11 +1,7 @@
 <?php
 
-    /**
-     * Created by PhpStorm.
-     * User: Miguel
-     * Date: 13/2/16
-     * Time: 18:32
-     */
+    require_once('../model/Usuario.php');
+
     class Alumno extends Usuario
     {
 

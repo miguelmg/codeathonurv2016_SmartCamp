@@ -94,4 +94,14 @@
             $this->valor = $valor;
         }
 
+        function __construct($puntuacion, $bd){
+            $this->setId($puntuacion['id']);
+            if($this->getTipo() == 1){
+                $this->setUsuario(new Profesor($puntuacion['usuario_id'], $bd));
+            }else{
+                $this->setUsuario(new Alumno($puntuacion['usuario_id'], $bd));
+            }
+            $this->setUsuario(new Recurso($puntuacion['recurso_id'], $bd));
+            $this->setValor($puntuacion['valor']);
+        }
     }
